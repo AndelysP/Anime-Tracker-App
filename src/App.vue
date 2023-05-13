@@ -38,10 +38,6 @@ export default {
     <main>
       <div class="cards" v-if="animelist.length > 0">
         <Card v-for="anime in animelist" :key="anime.mal_id" :anime="anime" />
-
-        <a-modal v-model:visible="modalVisible">
-          <p>Contenu de la modale</p>
-        </a-modal>
       </div>
       <div class="no-results" v-else>
         <h3>Désolé, il n'y a pas de résultats</h3>

@@ -104,13 +104,14 @@ main {
                 width: 100%;
             }
 
-            img {
+            .card-img {
                 width: 90%;
                 height: 50vh;
                 object-fit: cover;
                 border-radius: 16px;
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
                 transition: 0.4s;
+                cursor: pointer;
 
                 @media screen and (max-width: 767px) {
                     width: 100%;
@@ -131,7 +132,7 @@ main {
             }
 
             &:hover {
-                img {
+                .card-img {
                     transform: scale(1.05);
 
                     @media screen and (max-width: 767px) {
@@ -146,14 +147,23 @@ main {
             }
 
             .modal {
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 position: fixed;
+                overflow-y: auto;
                 z-index: 1;
                 left: 0;
                 top: 0;
+                bottom: 0;
                 width: 100%;
                 height: 100%;
                 background-color: rgba(0, 0, 0, 0.4);
+
+                @media screen and (max-width: 767px) {
+                    display: inline-block;
+                }
+
             }
 
             .modal-content {
@@ -164,22 +174,140 @@ main {
                 border-radius: 20px;
                 width: 80%;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                }
 
                 .content {
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
+                    @media screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+
                     .left-content {
+                        @media screen and (max-width: 767px) {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                        }
+
                         img {
+                            border-radius: 16px;
+                            margin-top: 20px;
+
                             &:hover {
                                 transform: none;
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                width: 80%;
+                                margin-bottom: 20px;
                             }
                         }
                     }
 
-                    .right-content {}
+                    .right-content {
+                        margin-left: 2rem;
+
+                        p {
+                            margin: 10px;
+
+                            @media screen and (max-width: 767px) {
+                                margin: 0;
+                            }
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            .genre {
+                                padding: 5px;
+                            }
+                        }
+
+                        button {
+                            margin: 20px 5px 0 5px;
+                            border-radius: 15px;
+                            padding: 10px;
+                            color: #fff;
+                            border: none;
+                            box-shadow: 2px 5px 5px #a8a8a8;
+                            cursor: pointer;
+                        }
+
+                        .btn-increment {
+                            background-color: rgb(75, 151, 223);
+                        }
+
+                        .btn-decrement {
+                            background-color: #eb3730;
+                        }
+
+                        ul {
+                            display: inline-flex;
+                            list-style: none;
+
+                            @media screen and (max-width: 767px) {
+                                height: 25px;
+                            }
+
+                            li {
+                                background-color: rgb(253, 197, 133);
+                                border-radius: 15px;
+                                margin: 0 5px;
+                                font-size: 12px;
+                                color: #414141;
+                            }
+
+                            .genre-action {
+                                background-color: rgb(247, 131, 131);
+                            }
+
+                            .genre-adventure {
+                                background-color: rgb(144, 214, 247);
+                            }
+
+                            .genre-fantasy {
+                                background-color: rgb(200, 156, 209);
+                            }
+
+                            .genre-comedy {
+                                background-color: #403757;
+                                color: #fff;
+                            }
+
+                            .genre-horror {
+                                background-color: #3f3f3f;
+                                color: #fff;
+                            }
+
+                            .genre-supernatural {
+                                background-color: #3d50be;
+                                color: #fff;
+                            }
+
+                            .genre-mystery {
+                                background-color: #166775;
+                                color: #fff;
+                            }
+
+                            .genre-sports {
+                                background-color: #eb7530;
+                            }
+
+                            .genre-drama {
+                                background-color: #415c3b;
+                                color: #fff;
+                            }
+
+                            .genre-default {
+                                background-color: rgb(235, 235, 235);
+                            }
+                        }
+                    }
                 }
 
 
