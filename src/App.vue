@@ -11,7 +11,7 @@ export default {
     const animelist = ref([]);
 
     const handleSearch = async () => {
-      const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search_query.value}&limit=20`);
+      const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search_query.value}`);
       const resData = await res.json();
       animelist.value = resData.data;
 

@@ -22,6 +22,11 @@ header {
         text-transform: uppercase;
         margin-bottom: 30px;
 
+        @media screen and (max-width: 767px) {
+           font-size: 35px;
+        }
+
+
         strong {
             color: #313131;
         }
@@ -82,12 +87,22 @@ main {
         flex-wrap: wrap;
         margin: 0 -8px;
 
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .card {
             flex: 1 1 33%;
             width: 33%;
             max-width: 33%;
             padding: 0px 8px;
             margin-bottom: 16px;
+
+            @media screen and (max-width: 767px) {
+                max-width: none;
+                width: 100%;
+            }
 
             img {
                 width: 90%;
@@ -96,17 +111,33 @@ main {
                 border-radius: 16px;
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
                 transition: 0.4s;
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    height: 60vh;
+                }
+
             }
 
             h3 {
                 padding: 16px;
                 color: #313131;
                 transition: .4s;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
+                }
+
             }
 
             &:hover {
                 img {
                     transform: scale(1.05);
+
+                    @media screen and (max-width: 767px) {
+                        transform: none;
+                    }
+
                 }
 
                 h3 {
