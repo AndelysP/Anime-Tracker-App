@@ -1,29 +1,27 @@
-# AnimeTrackerApp
+<h1 align="center" id="title">Anime Tracker App ⛩️</h1>
 
-This template should help get you started developing with Vue 3 in Vite.
+<p id="description">Cette application permet de rechercher et de suivre ses animés préférées grâce à une fonctionnalité de recherche avec un suivi des épisodes. Il suffit de saisir le titre de l'anime que vous recherchez et en un instant l'algorithme vous fournira les résultats les plus pertinents. Il y a également une fonctionnalité de suivi des épisodes pour vous aider à garder une trace de votre progression. Plus besoin de vous demander où vous en êtes le site met automatiquement à jour le nombre d'épisodes que vous avez visionnés. Profitez pleinement de vos animes en gardant une vue d'ensemble claire sur les épisodes en cours.</p>
 
-## Recommended IDE Setup
+<h2>🚀 Demo</h2>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[https://animetrackerapp.vercel.app/](https://animetrackerapp.vercel.app/)
 
-## Customize configuration
+<h2>Project Screenshots:</h2>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+<img src="https://zupimages.net/up/23/21/4aan.png" alt="project-screenshot" width="400" height="400/">
 
-## Project Setup
+<img src="https://zupimages.net/up/23/21/zekb.png" alt="project-screenshot" width="400" height="400/">
 
-```sh
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Installer les dépendances</p>
+
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+<p>2. Lancer le projet</p>
 
-```sh
-npm run dev
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+npm run dev
 ```
